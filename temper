@@ -1,0 +1,7 @@
+ squared_norms_left = np.sum(translated_left ** 2, axis=1)
+    rms_left = np.sqrt(np.mean(squared_norms_left))
+    s_left = np.sqrt(2) / rms_left
+
+    squared_norms_right = np.sum(translated_right ** 2, axis=1)
+    rms_right = np.sqrt(np.mean(squared_norms_right))
+    s_right = np.sqrt(2) / rms_right
